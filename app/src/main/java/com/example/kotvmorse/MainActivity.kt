@@ -50,13 +50,11 @@ class MainActivity : AppCompatActivity() {
             Thread.sleep(100)
         } catch (e: InterruptedException) {
         }
-        //켜
         this.flashLightOn()
         try {
             Thread.sleep(300)
         } catch (e: InterruptedException) {
         }
-        //꺼
         this.flashLightOff()
     }
 
@@ -66,13 +64,11 @@ class MainActivity : AppCompatActivity() {
             Thread.sleep(100)
         } catch (e: InterruptedException) {
         }
-        //전원 켜
         this.flashLightOn()
         try {
             Thread.sleep(100)
         } catch (e: InterruptedException) {
         }
-        //전원 끌거
         this.flashLightOff()
     }
      private fun startMorse(mos: String?) {
@@ -91,7 +87,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    //텍스트에서 문자열 가져와서 문자들을 startMorse 메소드에 넘겨줌
     fun startButton(view: View?) {
         Thread {
             val et = findViewById<EditText>(R.id.editText)
